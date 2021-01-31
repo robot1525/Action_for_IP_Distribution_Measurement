@@ -12,7 +12,7 @@ udp_socket = socket(AF_INET, SOCK_DGRAM)
 dest_addr = ('47.111.93.148', 22)  # 注意 是元组，ip是字符串，端口是数字
  
 # 3. 从本地读取数据
-data_size = 32 * 2**20 ### 单位 B
+data_size = 2**15 ### 单位 B
 send_data = "0" * data_size
 
 # 4. 用udp套接字发送数据
